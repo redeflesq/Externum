@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Game">
+      <UniqueIdentifier>{18d755ab-880d-42c2-a4b8-88a7b08fb3e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Game">
+      <UniqueIdentifier>{d57390ee-8f6b-428e-a1b8-7f36eb84f3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Game\Engine">
+      <UniqueIdentifier>{c64dfa1b-0f4b-4566-b0a0-f1de092249d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Memory">
+      <UniqueIdentifier>{a7ff2221-b083-4791-b589-1d4f6cba6e9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Memory">
+      <UniqueIdentifier>{2a18113c-65b2-479f-a94b-4fe0a681745f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sdk.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Engine\Defines.h">
+      <Filter>Файлы заголовков\Game\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Engine\Structs.h">
+      <Filter>Файлы заголовков\Game\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\memory.h">
+      <Filter>Файлы заголовков\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\g_Compares.h">
+      <Filter>Файлы заголовков\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\g_Engine.h">
+      <Filter>Файлы заголовков\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\g_Localplayer.h">
+      <Filter>Файлы заголовков\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\g_Player.h">
+      <Filter>Файлы заголовков\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="h_Engine.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Engine\Offsets.h">
+      <Filter>Файлы заголовков\Game\Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\g_Compares.c">
+      <Filter>Исходные файлы\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\g_Engine.c">
+      <Filter>Исходные файлы\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\g_Localplayer.c">
+      <Filter>Исходные файлы\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\g_Player.c">
+      <Filter>Исходные файлы\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\memory.c">
+      <Filter>Исходные файлы\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="h_Engine.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

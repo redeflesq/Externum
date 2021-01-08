@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\CSGOSDK">
+      <UniqueIdentifier>{ddf6a327-c0a4-48d1-bf5f-8404cdeab196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\CSGOSDK\Memory">
+      <UniqueIdentifier>{da18705d-d09e-4b0b-987a-62f9fc23bcdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\CSGOSDK\Game">
+      <UniqueIdentifier>{eaf5013f-d605-40f7-8a09-47ae98db0d8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Features">
+      <UniqueIdentifier>{84f220e2-b1a6-49ac-a721-f5919411763d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Features">
+      <UniqueIdentifier>{cfd1c3b4-7b55-4a7d-a9ae-92d522a80ec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Utils">
+      <UniqueIdentifier>{43f2835b-91bf-4f03-8602-3d03d1a40ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Utils">
+      <UniqueIdentifier>{53f2c9aa-b9d7-4e2e-b75c-140bc12a73f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Features\Visuals">
+      <UniqueIdentifier>{bed4f577-fb8f-42d0-8626-9402ece4c73b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Features\Visuals">
+      <UniqueIdentifier>{003517f5-1b94-4204-ae09-8939aebdb972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Features\Aim">
+      <UniqueIdentifier>{aac1163c-54b4-4d78-b2d5-c2cbda909350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Features\Aim">
+      <UniqueIdentifier>{95e8376e-2e20-4bc7-983d-bfbe4e24384d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSGOSDK\h_Engine.c">
+      <Filter>Исходные файлы\CSGOSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSGOSDK\Memory\memory.c">
+      <Filter>Исходные файлы\CSGOSDK\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSGOSDK\Game\g_Compares.c">
+      <Filter>Исходные файлы\CSGOSDK\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSGOSDK\Game\g_Engine.c">
+      <Filter>Исходные файлы\CSGOSDK\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSGOSDK\Game\g_Localplayer.c">
+      <Filter>Исходные файлы\CSGOSDK\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSGOSDK\Game\g_Player.c">
+      <Filter>Исходные файлы\CSGOSDK\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="e_HackEngine.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Visuals\Glow.c">
+      <Filter>Исходные файлы\Features\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Aim\Triggerbot.c">
+      <Filter>Исходные файлы\Features\Aim</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Visuals\ESP.c">
+      <Filter>Исходные файлы\Features\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="e_HackUtils.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="e_HackEngine.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\nmath.h">
+      <Filter>Файлы заголовков\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\Visuals\Glow.h">
+      <Filter>Файлы заголовков\Features\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\Features.h">
+      <Filter>Файлы заголовков\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\Aim\Triggerbot.h">
+      <Filter>Файлы заголовков\Features\Aim</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\Visuals\ESP.h">
+      <Filter>Файлы заголовков\Features\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="e_HackUtils.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
