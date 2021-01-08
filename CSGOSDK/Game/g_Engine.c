@@ -38,7 +38,8 @@ DWORD GetGlowObjectManager()
 ViewMatrix GetViewMatrix()
 {
 	ViewMatrix _ViewMatrix;
-	ReadProcessMemory(hnMemoryHandle, clientBase + dwViewMatrix, &_ViewMatrix, sizeof(ViewMatrix), NULL);
+	//ReadProcessMemory(hnMemoryHandle, clientBase + dwViewMatrix, &_ViewMatrix, sizeof(ViewMatrix), NULL);
+	ReadMem(clientBase + dwViewMatrix, sizeof(ViewMatrix), &_ViewMatrix);
 	return _ViewMatrix;
 }
 
