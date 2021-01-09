@@ -67,20 +67,8 @@ void fTriggerbot()
 			v3LocalPlayerPos.y - v3PlayerPos.y,
 			v3LocalPlayerPos.z - v3PlayerPos.z,
 		);
-
-		int iAttackType = 0;
-
+		
 		if (fDistance > 250) {
-			iAttackType = 1;
-		}
-		else
-		{
-			iAttackType = 2;
-		}
-
-		switch (iAttackType)
-		{
-		case 1:
 			if (FHandle.Aim.Triggerbot.bRevolverOnlyOnEnemy) {
 				goto Attack1_RevolverOnlyOnEnemy;
 			}
@@ -88,7 +76,9 @@ void fTriggerbot()
 			{
 				goto Attack1;
 			}
-		case 2:
+		}
+		else
+		{
 			goto Attack2;
 		}
 	}
