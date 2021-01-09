@@ -70,7 +70,7 @@ Team PlayerGetTeam(DWORD dwBase)
 float PlayerGetSpawnTime(DWORD dwBase)
 {
 	float fSpawnTime = 0;
-	ReadMemFloat(dwBase + 0xA370, &fSpawnTime);
+	ReadMemFloat(dwBase + m_flSpawnTime, &fSpawnTime);
 	return fSpawnTime;
 }
 
