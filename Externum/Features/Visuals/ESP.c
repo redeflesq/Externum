@@ -1,19 +1,19 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 
 #include "ESP.h"
 #include "../../e_HackEngine.h"
 #include "../../Utils/nmath.h"
 
+int fpESP_Players[MAX_PLAYERS];
 RECT rect;
 HDC hDC = NULL;
 
 HFONT fESP_GetFont(int iSize);
 void fESP_WriteText(int _Xpos, int _Ypos, char* _szMessage, COLORREF bgColor, COLORREF textColor, HFONT hfont);
 
-int fpESP_Players[MAX_PLAYERS];
-
 void fESP_Enable()
 {
+	hDC = GetDC(NULL);
 	SetTextAlign(hDC, TA_CENTER | TA_NOUPDATECP);
 	for (int i = 0; i < MAX_PLAYERS; i++)
 	{
@@ -30,7 +30,6 @@ void fESP_Disable()
 
 void fESP()
 {
-	hDC = GetDC(NULL);
 	GetWindowRect(gHWND, &rect);
 	DWORD dwClientState = GetClientState();
 	int iLocalPlayerID = LocalPlayerGetID(dwClientState);
@@ -126,8 +125,6 @@ void fESP()
 			}
 		}
 	}
-
-	ReleaseDC(gHWND, hDC);
 }
 
 HFONT fESP_GetFont(int iSize)
